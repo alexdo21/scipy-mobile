@@ -24,13 +24,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let textLabel = UILabel()
         textLabel.backgroundColor = .white
         textLabel.textAlignment = .center
+        textLabel.layer.borderColor = UIColor.black.cgColor
+        textLabel.layer.borderWidth = 0.5
         return textLabel
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
         view.addSubview(functionInput)
         view.addSubview(derivativeResult)
         
