@@ -9,25 +9,45 @@
 /* Begin PBXBuildFile section */
 		D63AD8DE27E6C8D9006B09AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63AD8DD27E6C8D9006B09AB /* AppDelegate.swift */; };
 		D63AD8E027E6C8D9006B09AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63AD8DF27E6C8D9006B09AB /* SceneDelegate.swift */; };
-		D63AD8E227E6C8D9006B09AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63AD8E127E6C8D9006B09AB /* ViewController.swift */; };
+		D63AD8E227E6C8D9006B09AB /* CalculusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63AD8E127E6C8D9006B09AB /* CalculusController.swift */; };
 		D63AD8E727E6C8DB006B09AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63AD8E627E6C8DB006B09AB /* Assets.xcassets */; };
 		D63AD8F727E6CE47006B09AB /* Calculus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63AD8F627E6CE47006B09AB /* Calculus.swift */; };
 		D63AD8F927E6CE53006B09AB /* LinearAlgebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63AD8F827E6CE53006B09AB /* LinearAlgebra.swift */; };
 		D63AD8FB27E6CF0F006B09AB /* ScipyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63AD8FA27E6CF0F006B09AB /* ScipyService.swift */; };
 		D6447B3D27E6D797006917BD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447B3C27E6D797006917BD /* Extensions.swift */; };
+		D6447C7427FBFBFC00BF357A /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447C7327FBFBFC00BF357A /* ContainerViewController.swift */; };
+		D6447C7627FBFD6500BF357A /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447C7527FBFD6500BF357A /* SideMenuViewController.swift */; };
+		D6447C7827FBFD8600BF357A /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447C7727FBFD8600BF357A /* ContentViewController.swift */; };
+		D6447C7B27FC023000BF357A /* SideMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447C7A27FC023000BF357A /* SideMenuItem.swift */; };
+		D6447C7D27FC079F00BF357A /* SideMenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447C7C27FC079F00BF357A /* SideMenuItemCell.swift */; };
+		D6447C7F27FD057900BF357A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447C7E27FD057900BF357A /* SettingsViewController.swift */; };
+		D6447CA427FE36A500BF357A /* IntrinsicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447CA327FE36A500BF357A /* IntrinsicTableView.swift */; };
+		D6447CA627FE36E600BF357A /* FunctionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447CA527FE36E600BF357A /* FunctionCell.swift */; };
+		D6447CA827FE37F000BF357A /* SubjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447CA727FE37F000BF357A /* SubjectHeaderView.swift */; };
+		D64D55A027FE3EC700291F32 /* ExpandableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D559F27FE3EC700291F32 /* ExpandableTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D63AD8DA27E6C8D9006B09AB /* ScipyMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScipyMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63AD8DD27E6C8D9006B09AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D63AD8DF27E6C8D9006B09AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D63AD8E127E6C8D9006B09AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D63AD8E127E6C8D9006B09AB /* CalculusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculusController.swift; sourceTree = "<group>"; };
 		D63AD8E627E6C8DB006B09AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D63AD8EB27E6C8DB006B09AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D63AD8F627E6CE47006B09AB /* Calculus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculus.swift; sourceTree = "<group>"; };
 		D63AD8F827E6CE53006B09AB /* LinearAlgebra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearAlgebra.swift; sourceTree = "<group>"; };
 		D63AD8FA27E6CF0F006B09AB /* ScipyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScipyService.swift; sourceTree = "<group>"; };
 		D6447B3C27E6D797006917BD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D6447C7327FBFBFC00BF357A /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		D6447C7527FBFD6500BF357A /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		D6447C7727FBFD8600BF357A /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		D6447C7A27FC023000BF357A /* SideMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuItem.swift; sourceTree = "<group>"; };
+		D6447C7C27FC079F00BF357A /* SideMenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuItemCell.swift; sourceTree = "<group>"; };
+		D6447C7E27FD057900BF357A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D6447CA327FE36A500BF357A /* IntrinsicTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicTableView.swift; sourceTree = "<group>"; };
+		D6447CA527FE36E600BF357A /* FunctionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionCell.swift; sourceTree = "<group>"; };
+		D6447CA727FE37F000BF357A /* SubjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectHeaderView.swift; sourceTree = "<group>"; };
+		D64D559F27FE3EC700291F32 /* ExpandableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,8 @@
 		D63AD8DC27E6C8D9006B09AB /* ScipyMobile */ = {
 			isa = PBXGroup;
 			children = (
+				D6447CA227FE365A00BF357A /* Base */,
+				D6447C7927FC022500BF357A /* Views */,
 				D6447B3B27E6D775006917BD /* Helpers */,
 				D63AD8F327E6CDFF006B09AB /* Services */,
 				D63AD8F227E6CDF8006B09AB /* Models */,
@@ -75,7 +97,11 @@
 		D63AD8F127E6CDD5006B09AB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D63AD8E127E6C8D9006B09AB /* ViewController.swift */,
+				D63AD8E127E6C8D9006B09AB /* CalculusController.swift */,
+				D6447C7327FBFBFC00BF357A /* ContainerViewController.swift */,
+				D6447C7527FBFD6500BF357A /* SideMenuViewController.swift */,
+				D6447C7727FBFD8600BF357A /* ContentViewController.swift */,
+				D6447C7E27FD057900BF357A /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -83,6 +109,7 @@
 		D63AD8F227E6CDF8006B09AB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D6447C7A27FC023000BF357A /* SideMenuItem.swift */,
 				D63AD8F627E6CE47006B09AB /* Calculus.swift */,
 				D63AD8F827E6CE53006B09AB /* LinearAlgebra.swift */,
 			);
@@ -103,6 +130,25 @@
 				D6447B3C27E6D797006917BD /* Extensions.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D6447C7927FC022500BF357A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D6447C7C27FC079F00BF357A /* SideMenuItemCell.swift */,
+				D6447CA527FE36E600BF357A /* FunctionCell.swift */,
+				D6447CA727FE37F000BF357A /* SubjectHeaderView.swift */,
+				D64D559F27FE3EC700291F32 /* ExpandableTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D6447CA227FE365A00BF357A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D6447CA327FE36A500BF357A /* IntrinsicTableView.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,12 +220,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6447CA627FE36E600BF357A /* FunctionCell.swift in Sources */,
+				D6447C7827FBFD8600BF357A /* ContentViewController.swift in Sources */,
 				D63AD8FB27E6CF0F006B09AB /* ScipyService.swift in Sources */,
-				D63AD8E227E6C8D9006B09AB /* ViewController.swift in Sources */,
+				D63AD8E227E6C8D9006B09AB /* CalculusController.swift in Sources */,
+				D6447CA427FE36A500BF357A /* IntrinsicTableView.swift in Sources */,
+				D6447C7427FBFBFC00BF357A /* ContainerViewController.swift in Sources */,
+				D6447CA827FE37F000BF357A /* SubjectHeaderView.swift in Sources */,
 				D63AD8F927E6CE53006B09AB /* LinearAlgebra.swift in Sources */,
+				D64D55A027FE3EC700291F32 /* ExpandableTableView.swift in Sources */,
 				D63AD8DE27E6C8D9006B09AB /* AppDelegate.swift in Sources */,
+				D6447C7D27FC079F00BF357A /* SideMenuItemCell.swift in Sources */,
 				D63AD8E027E6C8D9006B09AB /* SceneDelegate.swift in Sources */,
 				D63AD8F727E6CE47006B09AB /* Calculus.swift in Sources */,
+				D6447C7B27FC023000BF357A /* SideMenuItem.swift in Sources */,
+				D6447C7F27FD057900BF357A /* SettingsViewController.swift in Sources */,
+				D6447C7627FBFD6500BF357A /* SideMenuViewController.swift in Sources */,
 				D6447B3D27E6D797006917BD /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

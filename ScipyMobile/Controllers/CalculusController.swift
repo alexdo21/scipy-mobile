@@ -7,8 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
-    
+class CalculusController: ContentViewController {
     lazy var functionInput: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Enter function here"
@@ -17,6 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.textAlignment = .center
         textField.delegate = self
         textField.returnKeyType = .done
+        textField.autocapitalizationType = .none
         return textField
     }()
     
@@ -32,7 +32,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .lightGray
+        title = "Calculus"
         view.addSubview(functionInput)
         view.addSubview(derivativeResult)
         
@@ -47,7 +48,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.derivativeResult.text = derivative
         }
     }
-    
+}
+
+extension CalculusController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         derivativeResult.text = ""
     }
@@ -59,6 +62,5 @@ class ViewController: UIViewController, UITextFieldDelegate {
         functionInput.resignFirstResponder()
         return true
     }
-
 }
 
