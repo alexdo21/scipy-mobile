@@ -7,10 +7,10 @@
 
 import UIKit
 
-class SettingsViewController: ContentViewController {
+class LinearAlgebraController: ContentViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .magenta
-        title = "Settings"
+        view.backgroundColor = .white
+        title = "Linear Algebra"
     }
 }

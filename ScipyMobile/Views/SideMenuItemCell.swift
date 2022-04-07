@@ -31,11 +31,10 @@ class SideMenuItemCell: UITableViewCell {
     
     private func setupViews() {
         selectionStyle = .none
-        
+        backgroundColor = UIColor.rgb(red: 151, green: 196, blue: 196)
         expandableTableView.isHidden = true
         containerView.axis = .vertical
         
-        contentView.backgroundColor = .lightGray
         contentView.addSubview(containerView)
         containerView.addArrangedSubview(subjectHeader)
         containerView.addArrangedSubview(expandableTableView)

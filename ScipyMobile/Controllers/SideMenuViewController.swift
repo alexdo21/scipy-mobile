@@ -19,7 +19,7 @@ class SideMenuViewController: UIViewController {
     
     private var tableView: UITableView = {
         let tv = UITableView()
-        tv.backgroundColor = .lightGray
+        tv.backgroundColor = UIColor.rgb(red: 151, green: 196, blue: 196)
         tv.translatesAutoresizingMaskIntoConstraints = false
         tv.separatorStyle = .none
         tv.bounces = false
@@ -41,7 +41,6 @@ class SideMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .clear
         view.frame.origin.x = -view.frame.size.width
         
         view.addSubview(sideMenuView)

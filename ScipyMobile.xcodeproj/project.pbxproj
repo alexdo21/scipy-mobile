@@ -20,11 +20,13 @@
 		D6447C7827FBFD8600BF357A /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447C7727FBFD8600BF357A /* ContentViewController.swift */; };
 		D6447C7B27FC023000BF357A /* SideMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447C7A27FC023000BF357A /* SideMenuItem.swift */; };
 		D6447C7D27FC079F00BF357A /* SideMenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447C7C27FC079F00BF357A /* SideMenuItemCell.swift */; };
-		D6447C7F27FD057900BF357A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447C7E27FD057900BF357A /* SettingsViewController.swift */; };
+		D6447C7F27FD057900BF357A /* LinearAlgebraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447C7E27FD057900BF357A /* LinearAlgebraController.swift */; };
 		D6447CA427FE36A500BF357A /* IntrinsicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447CA327FE36A500BF357A /* IntrinsicTableView.swift */; };
 		D6447CA627FE36E600BF357A /* FunctionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447CA527FE36E600BF357A /* FunctionCell.swift */; };
 		D6447CA827FE37F000BF357A /* SubjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6447CA727FE37F000BF357A /* SubjectHeaderView.swift */; };
 		D64D55A027FE3EC700291F32 /* ExpandableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D559F27FE3EC700291F32 /* ExpandableTableView.swift */; };
+		D64D55A227FE5F2E00291F32 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55A127FE5F2E00291F32 /* LandingPageViewController.swift */; };
+		D64D55A427FE70BA00291F32 /* PopupWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55A327FE70BA00291F32 /* PopupWindowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,11 +45,13 @@
 		D6447C7727FBFD8600BF357A /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		D6447C7A27FC023000BF357A /* SideMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuItem.swift; sourceTree = "<group>"; };
 		D6447C7C27FC079F00BF357A /* SideMenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuItemCell.swift; sourceTree = "<group>"; };
-		D6447C7E27FD057900BF357A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D6447C7E27FD057900BF357A /* LinearAlgebraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearAlgebraController.swift; sourceTree = "<group>"; };
 		D6447CA327FE36A500BF357A /* IntrinsicTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicTableView.swift; sourceTree = "<group>"; };
 		D6447CA527FE36E600BF357A /* FunctionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionCell.swift; sourceTree = "<group>"; };
 		D6447CA727FE37F000BF357A /* SubjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectHeaderView.swift; sourceTree = "<group>"; };
 		D64D559F27FE3EC700291F32 /* ExpandableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableView.swift; sourceTree = "<group>"; };
+		D64D55A127FE5F2E00291F32 /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		D64D55A327FE70BA00291F32 /* PopupWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupWindowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,9 @@
 				D6447C7327FBFBFC00BF357A /* ContainerViewController.swift */,
 				D6447C7527FBFD6500BF357A /* SideMenuViewController.swift */,
 				D6447C7727FBFD8600BF357A /* ContentViewController.swift */,
-				D6447C7E27FD057900BF357A /* SettingsViewController.swift */,
+				D6447C7E27FD057900BF357A /* LinearAlgebraController.swift */,
+				D64D55A127FE5F2E00291F32 /* LandingPageViewController.swift */,
+				D64D55A327FE70BA00291F32 /* PopupWindowViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -224,6 +230,7 @@
 				D6447C7827FBFD8600BF357A /* ContentViewController.swift in Sources */,
 				D63AD8FB27E6CF0F006B09AB /* ScipyService.swift in Sources */,
 				D63AD8E227E6C8D9006B09AB /* CalculusController.swift in Sources */,
+				D64D55A427FE70BA00291F32 /* PopupWindowViewController.swift in Sources */,
 				D6447CA427FE36A500BF357A /* IntrinsicTableView.swift in Sources */,
 				D6447C7427FBFBFC00BF357A /* ContainerViewController.swift in Sources */,
 				D6447CA827FE37F000BF357A /* SubjectHeaderView.swift in Sources */,
@@ -234,8 +241,9 @@
 				D63AD8E027E6C8D9006B09AB /* SceneDelegate.swift in Sources */,
 				D63AD8F727E6CE47006B09AB /* Calculus.swift in Sources */,
 				D6447C7B27FC023000BF357A /* SideMenuItem.swift in Sources */,
-				D6447C7F27FD057900BF357A /* SettingsViewController.swift in Sources */,
+				D6447C7F27FD057900BF357A /* LinearAlgebraController.swift in Sources */,
 				D6447C7627FBFD6500BF357A /* SideMenuViewController.swift in Sources */,
+				D64D55A227FE5F2E00291F32 /* LandingPageViewController.swift in Sources */,
 				D6447B3D27E6D797006917BD /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

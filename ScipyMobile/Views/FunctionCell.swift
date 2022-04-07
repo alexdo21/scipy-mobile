@@ -23,8 +23,9 @@ class FunctionCell: UITableViewCell {
     }
     
     func setupViews() {
-        contentView.backgroundColor = .lightGray
+        backgroundColor = UIColor.rgb(red: 151, green: 196, blue: 196)
         contentView.addSubview(name)
+        
         name.translatesAutoresizingMaskIntoConstraints = false
         name.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
         name.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true

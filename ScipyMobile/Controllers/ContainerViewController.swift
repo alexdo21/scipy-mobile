@@ -9,24 +9,30 @@ import UIKit
 
 class ContainerViewComposer {
     static func makeContainer() -> ContainerViewController {
+        let landingPageVC = LandingPageViewController()
         let calculusVC = CalculusController()
+        let linearAlgebraVC = LinearAlgebraController()
         let sideMenuItems = [
-            SideMenuItem(icon: UIImage(systemName: "function")?.withTintColor(.white, renderingMode: .alwaysOriginal),
+            SideMenuItem(icon: UIImage(systemName: "function")?.withTintColor(.black, renderingMode: .alwaysOriginal),
                          name: "Calculus",
                          functions: [
                             Function(name: "Derivative", viewController: .embed(calculusVC)),
                             Function(name: "Integral", viewController: .embed(calculusVC))
                          ]),
-            SideMenuItem(icon: UIImage(systemName: "number")?.withTintColor(.white, renderingMode: .alwaysOriginal),
+            SideMenuItem(icon: UIImage(systemName: "square.grid.3x3")?.withTintColor(.black, renderingMode: .alwaysOriginal),
                          name: "Linear Algebra",
                          functions: [
-                            Function(name: "Matrix Inverse", viewController: .embed(calculusVC)),
-                            Function(name: "Matrix Determinant", viewController: .embed(calculusVC))
+                            Function(name: "Matrix Inverse", viewController: .embed(linearAlgebraVC)),
+                            Function(name: "Matrix Determinant", viewController: .embed(linearAlgebraVC))
+                         ]),
+            SideMenuItem(icon: UIImage(systemName: "cart")?.withTintColor(.black, renderingMode: .alwaysOriginal),
+                         name: "Examples",
+                         functions: [
+                            Function(name: "Popup Window", viewController: .embed(ExampleViewController()))
                          ])
-
         ]
         let sideMenuItemViewController = SideMenuViewController(sideMenuItems: sideMenuItems)
-        let container = ContainerViewController(sideMenuViewController: sideMenuItemViewController, rootViewController: calculusVC)
+        let container = ContainerViewController(sideMenuViewController: sideMenuItemViewController, rootViewController: landingPageVC)
         return container
     }
 }
@@ -54,6 +60,11 @@ class ContainerViewController: UIViewController {
         addChild(navigator)
         view.addSubview(navigator.view)
         navigator.didMove(toParent: self)
+        let barAppearance = UINavigationBarAppearance()
+        barAppearance.backgroundColor = UIColor.rgb(red: 116, green: 157, blue: 157)
+        barAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navigator.navigationBar.standardAppearance = barAppearance
+        navigator.navigationBar.scrollEdgeAppearance = barAppearance
         
         addChild(sideMenuViewController)
         view.addSubview(sideMenuViewController.view)

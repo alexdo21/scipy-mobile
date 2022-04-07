@@ -12,7 +12,7 @@ class CalculusController: ContentViewController {
         let textField = UITextField()
         textField.placeholder = "Enter function here"
         textField.borderStyle = UITextField.BorderStyle.line
-        textField.backgroundColor = .white
+        textField.backgroundColor = .lightGray
         textField.textAlignment = .center
         textField.delegate = self
         textField.returnKeyType = .done
@@ -22,7 +22,7 @@ class CalculusController: ContentViewController {
     
     lazy var derivativeResult: UILabel = {
         let textLabel = UILabel()
-        textLabel.backgroundColor = .white
+        textLabel.backgroundColor = .lightGray
         textLabel.textAlignment = .center
         textLabel.layer.borderColor = UIColor.black.cgColor
         textLabel.layer.borderWidth = 0.5
@@ -32,7 +32,7 @@ class CalculusController: ContentViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .white
         title = "Calculus"
         view.addSubview(functionInput)
         view.addSubview(derivativeResult)

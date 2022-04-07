@@ -16,6 +16,7 @@ class SubjectHeaderView: UIView {
     
     private var itemLabel: UILabel = {
         let label = UILabel()
+        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
