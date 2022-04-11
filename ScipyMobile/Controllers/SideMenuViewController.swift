@@ -45,7 +45,7 @@ class SideMenuViewController: UIViewController {
         leadingConstraint.isActive = true
         
         sideMenuView.anchor(top: view.topAnchor, left: nil, bottom: view.bottomAnchor, right: nil)
-        sideMenuView.widthAnchor.constraint(equalToConstant: view.frame.size.width * 0.6).isActive = true
+        sideMenuView.widthAnchor.constraint(equalToConstant: view.frame.size.width * 0.65).isActive = true
         
         tableView.anchor(top: sideMenuView.topAnchor, left: nil, bottom: sideMenuView.bottomAnchor, right: nil)
         tableView.leadingAnchor.constraint(equalTo: sideMenuView.leadingAnchor).isActive = true

@@ -32,6 +32,27 @@ class ScipyService: NSObject {
         }
         task.resume()
     }
+    
+    func fetchSymbolicIntegral(for expression: String, _ wrt: String, completion: @escaping (String) -> ()) {
+        let url = URL(string: BASE_URL + "calculus/monomial/symbolic-integral")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        let json: [String:Any] = ["expression": expression, "wrt": wrt]
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+        request.httpBody = jsonData
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if error != nil {
+                print(error ?? "")
+                return
+            }
+            guard let data = data, let response = try? JSONDecoder().decode(SymbolicIntegral.self, from: data) else { return }
+            DispatchQueue.main.async {
+                completion(response.symbolicIntegral)
+            }
+        }
+        task.resume()
+    }
 
     func fetchMatrixInverse(for matrix: [[Int]], completion: @escaping ([[Float]]) -> ()) {
         let url = URL(string: BASE_URL + "linalg/inverse")!

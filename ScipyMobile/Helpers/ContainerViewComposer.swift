@@ -26,12 +26,10 @@ class ContainerViewComposer {
                             Function(name: "Matrix Inverse", viewController: .embed(linearAlgebraVC)),
                             Function(name: "Matrix Determinant", viewController: .embed(linearAlgebraVC))
                          ]),
-            SideMenuItem(icon: UIImage(systemName: "cart")?.withTintColor(.black, renderingMode: .alwaysOriginal),
-                         name: "Examples",
-                         functions: [
-                            Function(name: "Popup Window", viewController: .embed(ExampleViewController())),
-                            Function(name: "Problem -> Solution", viewController: .embed(CalculusController()))
-                         ])
+//            SideMenuItem(icon: UIImage(systemName: "cart")?.withTintColor(.black, renderingMode: .alwaysOriginal),
+//                         name: "Examples",
+//                         functions: [
+//                         ])
         ]
         let sideMenuItemViewController = SideMenuViewController(sideMenuItems: sideMenuItems)
         let container = ContainerViewController(sideMenuViewController: sideMenuItemViewController, rootViewController: landingPageVC)

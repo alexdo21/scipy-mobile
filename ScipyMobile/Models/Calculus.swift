@@ -11,3 +11,10 @@ struct SymbolicDerivative: Codable {
         case symbolicDerivative = "symbolicDerivative"
     }
 }
+
+struct SymbolicIntegral: Codable {
+    let symbolicIntegral: String
+    enum CodingKeys: String, CodingKey {
+        case symbolicIntegral = "symbolicIntegral"
+    }
+}

@@ -51,3 +51,15 @@ extension UIView {
         }
     }
 }
+
+extension UITextField {
+    static func makeCustomControlPanelUITextField(placeholder: String) -> UITextField {
+        let editor = UITextField()
+        editor.textContentType = .username
+        editor.textAlignment = .center
+        editor.autocapitalizationType = .none
+        editor.autocorrectionType = .no
+        editor.placeholder = placeholder
+        return editor
+    }
+}

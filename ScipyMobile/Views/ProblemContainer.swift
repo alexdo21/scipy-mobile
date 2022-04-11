@@ -12,10 +12,12 @@ class ProblemContainer: UIView {
     var wrt: String = "x"
     var expr: String = "f(x)"
     var atValue: String = "x"
+    var from: String = "a"
+    var to: String = "b"
     let expressionLabel: MTMathUILabel = {
         let label = MTMathUILabel()
         label.textColor = .white
-        label.font = MTFontManager().xitsFont(withSize: 26)
+        label.font = MTFontManager().xitsFont(withSize: 24)
         return label
     }()
         
@@ -31,7 +33,6 @@ class ProblemContainer: UIView {
     func setupViews() {
         backgroundColor = UIColor.rgb(red: 173, green: 187, blue: 187)
         addSubview(expressionLabel)
-        expressionLabel.anchor(top: topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, padding: .init(top: 5, left: 15, bottom: 5, right: 0))
-        expressionLabel.latex = "\\frac{\\mathrm{d} }{\\mathrm{d} \(wrt)} (\(expr))"
+        expressionLabel.anchor(top: topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, padding: .init(top: 0, left: 15, bottom: 0, right: 0))
     }
 }

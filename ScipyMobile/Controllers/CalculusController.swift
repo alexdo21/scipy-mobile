@@ -23,18 +23,13 @@ class CalculusController: ContentViewController {
     }()
     let solveButton: UIButton = {
         var config = UIButton.Configuration.plain()
-        config.attributedTitle = AttributedString("Derive", attributes: .init([
-            NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18),
-            NSAttributedString.Key.foregroundColor: UIColor.rgb(red: 173, green: 187, blue: 187)
-        ]))
         config.titlePadding = 5
         let button = UIButton(configuration: config, primaryAction: nil)
-        button.addTarget(self, action: #selector(handleDerive), for: .touchUpInside)
         return button
     }()
     let controlPanelModal = ControlPanelModalViewController()
     let solutionModal = SolutionModalViewController()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
                 
@@ -59,8 +54,6 @@ class CalculusController: ContentViewController {
         controlPanelModal.controlPanel.exprEditor.delegate = self
         controlPanelModal.controlPanel.wrtEditor.addTarget(self, action: #selector(handleWrt), for: .editingChanged)
         controlPanelModal.controlPanel.wrtEditor.delegate = self
-        controlPanelModal.controlPanel.atValueEditor.addTarget(self, action: #selector(handleAtValue), for: .editingChanged)
-        controlPanelModal.controlPanel.atValueEditor.delegate = self
         
         solutionModal.modalPresentationStyle = .overFullScreen
         solutionModal.modalTransitionStyle = .crossDissolve
@@ -69,52 +62,15 @@ class CalculusController: ContentViewController {
     @objc func handleEdit() {
         present(controlPanelModal, animated: true, completion: nil)
     }
-
-    @objc func handleDerive() {
-        
-        if let problem = problemContainer.expressionLabel.latex {
-            let wrt = problemContainer.wrt
-            let expr = problemContainer.expr
-            let value = problemContainer.atValue
-            
-            solutionModal.solutionContainer.solutionView.problem.latex = problem
-            
-            if controlPanelModal.controlPanel.selectionPicker.selectedSegmentIndex == 0 {
-                ScipyService.sharedInstance.fetchSymbolicDerivative(for: expr, wrt) { (derivative) in
-                    self.solutionModal.solutionContainer.solutionView.solution.latex = derivative
-                }
-            } else {}
-            present(solutionModal, animated: true, completion: nil)
-        }
-    }
     
-    @objc func handlePicker() {
-        if controlPanelModal.controlPanel.selectionPicker .selectedSegmentIndex == 0 {
-            controlPanelModal.controlPanel.divider2.isHidden = true
-            controlPanelModal.controlPanel.atValueEditor.isHidden = true
-        } else if controlPanelModal.controlPanel.selectionPicker.selectedSegmentIndex == 1 {
-            controlPanelModal.controlPanel.divider2.isHidden = false
-            controlPanelModal.controlPanel.atValueEditor.isHidden = false
-        }
-    }
+    @objc func handlePicker() {}
     
     @objc func handleWrt() {
         problemContainer.wrt = controlPanelModal.controlPanel.wrtEditor.text ?? "x"
         updateLatex()
     }
     
-    @objc func handleAtValue() {
-        problemContainer.atValue = controlPanelModal.controlPanel.atValueEditor.text ?? "0"
-        updateLatex()
-    }
-    
-    func updateLatex() {
-        if controlPanelModal.controlPanel.selectionPicker.selectedSegmentIndex == 0 {
-            problemContainer.expressionLabel.latex = "\\frac{\\mathrm{d} }{\\mathrm{d} \(problemContainer.wrt)} (\(problemContainer.expr))"
-        } else {
-            problemContainer.expressionLabel.latex = "\\left. \\frac{\\mathrm{d} }{\\mathrm{d} \(problemContainer.wrt)} (\(problemContainer.expr)) \\right\\vert_{\(problemContainer.wrt)=\(problemContainer.atValue)}"
-        }
-    }
+    func updateLatex() {}
 }
 
 extension CalculusController: MTEditableMathLabelDelegate {

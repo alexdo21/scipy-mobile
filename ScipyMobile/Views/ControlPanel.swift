@@ -24,26 +24,18 @@ class ControlPanel: UIView {
         return editor
     }()
     
-    let wrtEditor: UITextField = {
-        let editor = UITextField()
-        editor.textContentType = .password
-        editor.textAlignment = .center
-        editor.autocapitalizationType = .none
-        editor.placeholder = "with respect to"
-        return editor
-    }()
+    let wrtEditor: UITextField = UITextField.makeCustomControlPanelUITextField(placeholder: "with respect to")
     
-    let atValueEditor: UITextField = {
-        let editor = UITextField()
-        editor.textContentType = .password
-        editor.textAlignment = .center
-        editor.autocapitalizationType = .none
-        editor.placeholder = "at value"
-        return editor
-    }()
+    let atValueEditor: UITextField = UITextField.makeCustomControlPanelUITextField(placeholder: "at value")
+    
+    let fromEditor: UITextField = UITextField.makeCustomControlPanelUITextField(placeholder: "from")
+    
+    let toEditor: UITextField = UITextField.makeCustomControlPanelUITextField(placeholder: "to")
     
     let divider1 = HorizontalDividerView()
     let divider2 = VerticalDividerView()
+    let divider3 = VerticalDividerView()
+    let divider4 = VerticalDividerView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -64,22 +56,39 @@ class ControlPanel: UIView {
         controlPanelContainer.addArrangedSubview(exprEditor)
         controlPanelContainer.addArrangedSubview(divider1)
         
-        let bottomContainer = UIStackView(arrangedSubviews: [wrtEditor, divider2, atValueEditor])
-        bottomContainer.distribution = .fillProportionally
-        controlPanelContainer.addArrangedSubview(bottomContainer)
-        
         selectionPicker.heightAnchor.constraint(equalToConstant: 50).isActive = true
         exprEditor.heightAnchor.constraint(equalToConstant: 50).isActive = true
         wrtEditor.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        atValueEditor.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        atValueEditor.widthAnchor.constraint(equalToConstant: 167).isActive = true
         
         divider1.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
-        divider2.widthAnchor.constraint(equalToConstant: 0.5).isActive = true
         
         controlPanelContainer.anchor(top: topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor)
-        
-        atValueEditor.isHidden = true
+    }
+    
+    func configureDerivativeControlPanel() {
+        let bottomContainer = UIStackView(arrangedSubviews: [wrtEditor, divider2, atValueEditor])
+        bottomContainer.distribution = .fillProportionally
+        controlPanelContainer.addArrangedSubview(bottomContainer)
+        atValueEditor.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        atValueEditor.widthAnchor.constraint(equalToConstant: 167).isActive = true
+        divider2.widthAnchor.constraint(equalToConstant: 0.5).isActive = true
         divider2.isHidden = true
+        atValueEditor.isHidden = true
+    }
+    
+    func configureIntegralControlPanel() {
+        let bottomContainer = UIStackView(arrangedSubviews: [wrtEditor, divider3, fromEditor, divider4, toEditor])
+        controlPanelContainer.addArrangedSubview(bottomContainer)
+        fromEditor.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        fromEditor.widthAnchor.constraint(equalToConstant: 111.66).isActive = true
+        toEditor.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        toEditor.widthAnchor.constraint(equalToConstant: 111.66).isActive = true
+        divider3.widthAnchor.constraint(equalToConstant: 0.5).isActive = true
+        divider4.widthAnchor.constraint(equalToConstant: 0.5).isActive = true
+        
+        divider3.isHidden = true
+        fromEditor.isHidden = true
+        toEditor.isHidden = true
+        divider4.isHidden = true
     }
 }
