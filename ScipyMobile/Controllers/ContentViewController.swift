@@ -7,12 +7,6 @@
 
 import UIKit
 
-enum ContentViewControllerPresentation {
-    case embed(ContentViewController)
-    case push(UIViewController)
-    case modal(UIViewController)
-}
-
 class ContentViewController: UIViewController {
     weak var sideMenuDelegate: SideMenuDelegate?
     private var barButtonImage: UIImage? = UIImage(systemName: "line.horizontal.3")
@@ -27,6 +21,7 @@ class ContentViewController: UIViewController {
         let barButtonItem = UIBarButtonItem(image: barButtonImage, style: .plain, target: self, action: #selector(handleMenuTapped))
         barButtonItem.tintColor = .white
         navigationItem.setLeftBarButton(barButtonItem, animated: false)
+        view.backgroundColor = .white
     }
     
     @objc private func handleMenuTapped() {

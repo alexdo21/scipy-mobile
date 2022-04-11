@@ -16,7 +16,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
             endingLineNumber = "28"
-            landmarkName = "fetchSymbolicDerivative(for:completion:)"
+            landmarkName = "fetchSymbolicDerivative(for:_:completion:)"
             landmarkType = "7">
             <Locations>
                <Location

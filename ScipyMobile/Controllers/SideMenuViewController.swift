@@ -7,11 +7,6 @@
 
 import UIKit
 
-protocol SideMenuDelegate: AnyObject {
-    func menuButtonTapped()
-    func itemSelected(item: ContentViewControllerPresentation)
-}
-
 class SideMenuViewController: UIViewController {
     private var sideMenuItems: [SideMenuItem] = []
     weak var contentViewDelegate: SideMenuDelegate?

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D63AD8DE27E6C8D9006B09AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63AD8DD27E6C8D9006B09AB /* AppDelegate.swift */; };
 		D63AD8E027E6C8D9006B09AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63AD8DF27E6C8D9006B09AB /* SceneDelegate.swift */; };
-		D63AD8E227E6C8D9006B09AB /* CalculusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63AD8E127E6C8D9006B09AB /* CalculusController.swift */; };
+		D63AD8E227E6C8D9006B09AB /* DerivativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63AD8E127E6C8D9006B09AB /* DerivativeController.swift */; };
 		D63AD8E727E6C8DB006B09AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63AD8E627E6C8DB006B09AB /* Assets.xcassets */; };
 		D63AD8F727E6CE47006B09AB /* Calculus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63AD8F627E6CE47006B09AB /* Calculus.swift */; };
 		D63AD8F927E6CE53006B09AB /* LinearAlgebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63AD8F827E6CE53006B09AB /* LinearAlgebra.swift */; };
@@ -27,13 +27,28 @@
 		D64D55A027FE3EC700291F32 /* ExpandableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D559F27FE3EC700291F32 /* ExpandableTableView.swift */; };
 		D64D55A227FE5F2E00291F32 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55A127FE5F2E00291F32 /* LandingPageViewController.swift */; };
 		D64D55A427FE70BA00291F32 /* PopupWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55A327FE70BA00291F32 /* PopupWindowViewController.swift */; };
+		D64D55A627FFB82700291F32 /* CalculusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55A527FFB82700291F32 /* CalculusController.swift */; };
+		D64D55A82803BADC00291F32 /* ContainerViewComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55A72803BADC00291F32 /* ContainerViewComposer.swift */; };
+		D64D55AB2803BB1400291F32 /* SideMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55AA2803BB1400291F32 /* SideMenuDelegate.swift */; };
+		D64D55AD2803BB8100291F32 /* ContentViewControllerPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55AC2803BB8100291F32 /* ContentViewControllerPresentation.swift */; };
+		D64D55AF2803BBEE00291F32 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55AE2803BBEE00291F32 /* DividerView.swift */; };
+		D64D55B12803BC4300291F32 /* ControlPanelModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55B02803BC4300291F32 /* ControlPanelModalViewController.swift */; };
+		D64D55B32803BC6100291F32 /* SolutionModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55B22803BC6100291F32 /* SolutionModalViewController.swift */; };
+		D64D55B52803BC9A00291F32 /* ProblemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55B42803BC9A00291F32 /* ProblemContainer.swift */; };
+		D64D55B72803BCE900291F32 /* ControlPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55B62803BCE900291F32 /* ControlPanel.swift */; };
+		D64D55B92803BD2400291F32 /* SolutionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55B82803BD2400291F32 /* SolutionContainer.swift */; };
+		D64D55BB2803BD3F00291F32 /* SolutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55BA2803BD3F00291F32 /* SolutionView.swift */; };
+		D64D55BD2803C9AB00291F32 /* IntegralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55BC2803C9AB00291F32 /* IntegralController.swift */; };
+		E81916881752C0E5D2CC5955 /* Pods_ScipyMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4E57DE70F03D4DC35C5EDA /* Pods_ScipyMobile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B4E57DE70F03D4DC35C5EDA /* Pods_ScipyMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScipyMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D248EABFBCFCAE6EE085E0 /* Pods-ScipyMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScipyMobile.release.xcconfig"; path = "Target Support Files/Pods-ScipyMobile/Pods-ScipyMobile.release.xcconfig"; sourceTree = "<group>"; };
 		D63AD8DA27E6C8D9006B09AB /* ScipyMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScipyMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63AD8DD27E6C8D9006B09AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D63AD8DF27E6C8D9006B09AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D63AD8E127E6C8D9006B09AB /* CalculusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculusController.swift; sourceTree = "<group>"; };
+		D63AD8E127E6C8D9006B09AB /* DerivativeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivativeController.swift; sourceTree = "<group>"; };
 		D63AD8E627E6C8DB006B09AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D63AD8EB27E6C8DB006B09AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D63AD8F627E6CE47006B09AB /* Calculus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculus.swift; sourceTree = "<group>"; };
@@ -52,6 +67,19 @@
 		D64D559F27FE3EC700291F32 /* ExpandableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableView.swift; sourceTree = "<group>"; };
 		D64D55A127FE5F2E00291F32 /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		D64D55A327FE70BA00291F32 /* PopupWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupWindowViewController.swift; sourceTree = "<group>"; };
+		D64D55A527FFB82700291F32 /* CalculusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculusController.swift; sourceTree = "<group>"; };
+		D64D55A72803BADC00291F32 /* ContainerViewComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewComposer.swift; sourceTree = "<group>"; };
+		D64D55AA2803BB1400291F32 /* SideMenuDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuDelegate.swift; sourceTree = "<group>"; };
+		D64D55AC2803BB8100291F32 /* ContentViewControllerPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewControllerPresentation.swift; sourceTree = "<group>"; };
+		D64D55AE2803BBEE00291F32 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		D64D55B02803BC4300291F32 /* ControlPanelModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelModalViewController.swift; sourceTree = "<group>"; };
+		D64D55B22803BC6100291F32 /* SolutionModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionModalViewController.swift; sourceTree = "<group>"; };
+		D64D55B42803BC9A00291F32 /* ProblemContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemContainer.swift; sourceTree = "<group>"; };
+		D64D55B62803BCE900291F32 /* ControlPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanel.swift; sourceTree = "<group>"; };
+		D64D55B82803BD2400291F32 /* SolutionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionContainer.swift; sourceTree = "<group>"; };
+		D64D55BA2803BD3F00291F32 /* SolutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionView.swift; sourceTree = "<group>"; };
+		D64D55BC2803C9AB00291F32 /* IntegralController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegralController.swift; sourceTree = "<group>"; };
+		E01F240515157C0AA3A72BF2 /* Pods-ScipyMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScipyMobile.debug.xcconfig"; path = "Target Support Files/Pods-ScipyMobile/Pods-ScipyMobile.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +87,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81916881752C0E5D2CC5955 /* Pods_ScipyMobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36ECA7BF765F4D6E5DBB8A9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E01F240515157C0AA3A72BF2 /* Pods-ScipyMobile.debug.xcconfig */,
+				41D248EABFBCFCAE6EE085E0 /* Pods-ScipyMobile.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D63AD8D127E6C8D9006B09AB = {
 			isa = PBXGroup;
 			children = (
 				D63AD8DC27E6C8D9006B09AB /* ScipyMobile */,
 				D63AD8DB27E6C8D9006B09AB /* Products */,
+				36ECA7BF765F4D6E5DBB8A9C /* Pods */,
+				D71FC30D6D284E0CD32D8160 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +124,7 @@
 		D63AD8DC27E6C8D9006B09AB /* ScipyMobile */ = {
 			isa = PBXGroup;
 			children = (
+				D64D55A92803BAFE00291F32 /* Protocols */,
 				D6447CA227FE365A00BF357A /* Base */,
 				D6447C7927FC022500BF357A /* Views */,
 				D6447B3B27E6D775006917BD /* Helpers */,
@@ -101,13 +142,17 @@
 		D63AD8F127E6CDD5006B09AB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D63AD8E127E6C8D9006B09AB /* CalculusController.swift */,
+				D63AD8E127E6C8D9006B09AB /* DerivativeController.swift */,
 				D6447C7327FBFBFC00BF357A /* ContainerViewController.swift */,
 				D6447C7527FBFD6500BF357A /* SideMenuViewController.swift */,
 				D6447C7727FBFD8600BF357A /* ContentViewController.swift */,
 				D6447C7E27FD057900BF357A /* LinearAlgebraController.swift */,
 				D64D55A127FE5F2E00291F32 /* LandingPageViewController.swift */,
 				D64D55A327FE70BA00291F32 /* PopupWindowViewController.swift */,
+				D64D55A527FFB82700291F32 /* CalculusController.swift */,
+				D64D55B02803BC4300291F32 /* ControlPanelModalViewController.swift */,
+				D64D55B22803BC6100291F32 /* SolutionModalViewController.swift */,
+				D64D55BC2803C9AB00291F32 /* IntegralController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -118,6 +163,7 @@
 				D6447C7A27FC023000BF357A /* SideMenuItem.swift */,
 				D63AD8F627E6CE47006B09AB /* Calculus.swift */,
 				D63AD8F827E6CE53006B09AB /* LinearAlgebra.swift */,
+				D64D55AC2803BB8100291F32 /* ContentViewControllerPresentation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				D6447B3C27E6D797006917BD /* Extensions.swift */,
+				D64D55A72803BADC00291F32 /* ContainerViewComposer.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -145,6 +192,11 @@
 				D6447CA527FE36E600BF357A /* FunctionCell.swift */,
 				D6447CA727FE37F000BF357A /* SubjectHeaderView.swift */,
 				D64D559F27FE3EC700291F32 /* ExpandableTableView.swift */,
+				D64D55AE2803BBEE00291F32 /* DividerView.swift */,
+				D64D55B42803BC9A00291F32 /* ProblemContainer.swift */,
+				D64D55B62803BCE900291F32 /* ControlPanel.swift */,
+				D64D55B82803BD2400291F32 /* SolutionContainer.swift */,
+				D64D55BA2803BD3F00291F32 /* SolutionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,6 +209,22 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		D64D55A92803BAFE00291F32 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D64D55AA2803BB1400291F32 /* SideMenuDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D71FC30D6D284E0CD32D8160 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B4E57DE70F03D4DC35C5EDA /* Pods_ScipyMobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D63AD8EE27E6C8DB006B09AB /* Build configuration list for PBXNativeTarget "ScipyMobile" */;
 			buildPhases = (
+				25FC1B110D254312A2DA3DB7 /* [CP] Check Pods Manifest.lock */,
 				D63AD8D627E6C8D9006B09AB /* Sources */,
 				D63AD8D727E6C8D9006B09AB /* Frameworks */,
 				D63AD8D827E6C8D9006B09AB /* Resources */,
+				15036899FA0772A1258099DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,29 +291,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15036899FA0772A1258099DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScipyMobile/Pods-ScipyMobile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScipyMobile/Pods-ScipyMobile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScipyMobile/Pods-ScipyMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25FC1B110D254312A2DA3DB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScipyMobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D63AD8D627E6C8D9006B09AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D6447CA627FE36E600BF357A /* FunctionCell.swift in Sources */,
+				D64D55A82803BADC00291F32 /* ContainerViewComposer.swift in Sources */,
+				D64D55B92803BD2400291F32 /* SolutionContainer.swift in Sources */,
+				D64D55B72803BCE900291F32 /* ControlPanel.swift in Sources */,
 				D6447C7827FBFD8600BF357A /* ContentViewController.swift in Sources */,
 				D63AD8FB27E6CF0F006B09AB /* ScipyService.swift in Sources */,
-				D63AD8E227E6C8D9006B09AB /* CalculusController.swift in Sources */,
+				D63AD8E227E6C8D9006B09AB /* DerivativeController.swift in Sources */,
+				D64D55BB2803BD3F00291F32 /* SolutionView.swift in Sources */,
+				D64D55B12803BC4300291F32 /* ControlPanelModalViewController.swift in Sources */,
 				D64D55A427FE70BA00291F32 /* PopupWindowViewController.swift in Sources */,
+				D64D55B52803BC9A00291F32 /* ProblemContainer.swift in Sources */,
+				D64D55AD2803BB8100291F32 /* ContentViewControllerPresentation.swift in Sources */,
 				D6447CA427FE36A500BF357A /* IntrinsicTableView.swift in Sources */,
 				D6447C7427FBFBFC00BF357A /* ContainerViewController.swift in Sources */,
+				D64D55BD2803C9AB00291F32 /* IntegralController.swift in Sources */,
 				D6447CA827FE37F000BF357A /* SubjectHeaderView.swift in Sources */,
 				D63AD8F927E6CE53006B09AB /* LinearAlgebra.swift in Sources */,
+				D64D55AB2803BB1400291F32 /* SideMenuDelegate.swift in Sources */,
 				D64D55A027FE3EC700291F32 /* ExpandableTableView.swift in Sources */,
 				D63AD8DE27E6C8D9006B09AB /* AppDelegate.swift in Sources */,
 				D6447C7D27FC079F00BF357A /* SideMenuItemCell.swift in Sources */,
 				D63AD8E027E6C8D9006B09AB /* SceneDelegate.swift in Sources */,
 				D63AD8F727E6CE47006B09AB /* Calculus.swift in Sources */,
+				D64D55A627FFB82700291F32 /* CalculusController.swift in Sources */,
 				D6447C7B27FC023000BF357A /* SideMenuItem.swift in Sources */,
 				D6447C7F27FD057900BF357A /* LinearAlgebraController.swift in Sources */,
 				D6447C7627FBFD6500BF357A /* SideMenuViewController.swift in Sources */,
 				D64D55A227FE5F2E00291F32 /* LandingPageViewController.swift in Sources */,
+				D64D55B32803BC6100291F32 /* SolutionModalViewController.swift in Sources */,
+				D64D55AF2803BBEE00291F32 /* DividerView.swift in Sources */,
 				D6447B3D27E6D797006917BD /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +493,7 @@
 		};
 		D63AD8EF27E6C8DB006B09AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E01F240515157C0AA3A72BF2 /* Pods-ScipyMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -397,6 +522,7 @@
 		};
 		D63AD8F027E6C8DB006B09AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41D248EABFBCFCAE6EE085E0 /* Pods-ScipyMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

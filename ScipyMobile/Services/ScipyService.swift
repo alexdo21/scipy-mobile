@@ -12,11 +12,11 @@ class ScipyService: NSObject {
     
     let BASE_URL = "http://127.0.0.1:5000/"
 
-    func fetchSymbolicDerivative(for expression: String, completion: @escaping (String) -> ()) {
+    func fetchSymbolicDerivative(for expression: String, _ wrt: String, completion: @escaping (String) -> ()) {
         let url = URL(string: BASE_URL + "calculus/monomial/symbolic-derivative")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        let json: [String:Any] = ["expression": expression, "wrt": "x"]
+        let json: [String:Any] = ["expression": expression, "wrt": wrt]
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         request.httpBody = jsonData
         

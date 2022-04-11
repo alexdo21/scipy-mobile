@@ -19,7 +19,6 @@ class LandingPageViewController: ContentViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         
         view.addSubview(welcomeLabel)
         welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true

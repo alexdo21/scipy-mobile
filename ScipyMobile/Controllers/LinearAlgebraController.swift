@@ -10,7 +10,6 @@ import UIKit
 class LinearAlgebraController: ContentViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         title = "Linear Algebra"
     }
 }

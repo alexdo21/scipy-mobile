@@ -7,30 +7,6 @@
 
 import UIKit
 
-class SeparatorView: UIView {
-    init() {
-        super.init(frame: .zero)
-        setupViews()
-    }
-
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-    }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
-    private func setupViews() {
-        backgroundColor = UIColor.rgb(red: 183, green: 183, blue: 183)
-    }
-
-    override var intrinsicContentSize: CGSize {
-        return CGSize(width: UIView.noIntrinsicMetric, height: 1)
-    }
-}
-
 class PopupWindow: UIView {
     let container = UIStackView()
     let symbolicButton: UIButton = {
@@ -45,7 +21,7 @@ class PopupWindow: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-    let separatorView = SeparatorView()
+    let separatorView = HorizontalDividerView()
     let solveButton: UIButton = {
         var config = UIButton.Configuration.plain()
         config.attributedTitle = AttributedString("SOLVE", attributes: .init([
@@ -90,7 +66,6 @@ class PopupWindowViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //view.backgroundColor = .clear
         view.backgroundColor = .black.withAlphaComponent(0.3)
         view.isOpaque = false
         
