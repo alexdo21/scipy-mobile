@@ -63,14 +63,14 @@ class CalculusController: ContentViewController {
         present(controlPanelModal, animated: true, completion: nil)
     }
     
-    @objc func handlePicker() {}
+    @objc func handlePicker() { /* WILL OVERRIDE */ }
     
     @objc func handleWrt() {
         problemContainer.wrt = controlPanelModal.controlPanel.wrtEditor.text ?? "x"
         updateLatex()
     }
     
-    func updateLatex() {}
+    func updateLatex() { /* WILL OVERRIDE */ }
 }
 
 extension CalculusController: MTEditableMathLabelDelegate {

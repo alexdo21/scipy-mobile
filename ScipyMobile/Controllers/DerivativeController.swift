@@ -57,17 +57,17 @@ class DerivativeController: CalculusController {
             let value = problemContainer.atValue
             
             solutionModal.solutionContainer.solutionView.problem.latex = problem
-            
             if controlPanelModal.controlPanel.selectionPicker.selectedSegmentIndex == 0 {
                 ScipyService.sharedInstance.fetchSymbolicDerivative(for: expr, wrt) { (derivative) in
                     self.solutionModal.solutionContainer.solutionView.solution.latex = derivative
+                    self.present(self.solutionModal, animated: true, completion: nil)
                 }
-            } else {
-                ScipyService.sharedInstance.fetchSymbolicDerivative(for: expr, wrt) { (derivative) in
-                    self.solutionModal.solutionContainer.solutionView.solution.latex = value
+            } else if controlPanelModal.controlPanel.selectionPicker.selectedSegmentIndex == 1 {
+                ScipyService.sharedInstance.fetchSolveDerivative(for: expr, wrt, value) { (result) in
+                    self.solutionModal.solutionContainer.solutionView.solution.latex = result
+                    self.present(self.solutionModal, animated: true, completion: nil)
                 }
             }
-            present(solutionModal, animated: true, completion: nil)
         }
     }
 }

@@ -71,17 +71,17 @@ class IntegralController: CalculusController {
             let to = problemContainer.to
             
             solutionModal.solutionContainer.solutionView.problem.latex = problem
-            
             if controlPanelModal.controlPanel.selectionPicker.selectedSegmentIndex == 0 {
                 ScipyService.sharedInstance.fetchSymbolicIntegral(for: expr, wrt) { (integral) in
                     self.solutionModal.solutionContainer.solutionView.solution.latex = integral
+                    self.present(self.solutionModal, animated: true, completion: nil)
                 }
             } else {
-                ScipyService.sharedInstance.fetchSymbolicIntegral(for: expr, wrt) { (integral) in
-                    self.solutionModal.solutionContainer.solutionView.solution.latex = from
+                ScipyService.sharedInstance.fetchSolveIntegral(for: expr, wrt, from, to) { (result) in
+                    self.solutionModal.solutionContainer.solutionView.solution.latex = result
+                    self.present(self.solutionModal, animated: true, completion: nil)
                 }
             }
-            present(solutionModal, animated: true, completion: nil)
         }
     }
 }

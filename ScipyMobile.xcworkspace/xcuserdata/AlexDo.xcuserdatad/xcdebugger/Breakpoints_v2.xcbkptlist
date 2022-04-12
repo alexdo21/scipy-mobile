@@ -1,26 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "DB88EE85-0E26-4F24-8D5F-20FBE11FA28B"
-   type = "1"
+   uuid = "09EF3633-8C65-475D-85DC-FD3BB1DEC8B2"
+   type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6909F4E8-E593-4C99-B394-7C6B5272C24F"
+            uuid = "29DFDB4C-C5A4-4775-B24D-8B2B9EC5679B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScipyMobile/Controllers/DerivativeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "handleAtValue()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8118179C-4C45-40D9-94B0-235EC3BE71E3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScipyMobile/Controllers/DerivativeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "handleDerive()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "95B31B1A-E6F9-4ACF-B4CA-A120184712AF"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScipyMobile/Services/ScipyService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetchSymbolicDerivative(for:_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD128D1D-3AB9-436A-AD06-0E62D2A27B8C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScipyMobile/Services/ScipyService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "fetchSymbolicDerivative(for:_:completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "6909F4E8-E593-4C99-B394-7C6B5272C24F - 5af90ccdb138860d"
+                  uuid = "BD128D1D-3AB9-436A-AD06-0E62D2A27B8C - 5af90ccdb138860d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -35,7 +83,7 @@
                   offsetFromSymbolStart = "720">
                </Location>
                <Location
-                  uuid = "6909F4E8-E593-4C99-B394-7C6B5272C24F - 5af90ccdb138860d"
+                  uuid = "BD128D1D-3AB9-436A-AD06-0E62D2A27B8C - 5af90ccdb138860d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -50,38 +98,6 @@
                   offsetFromSymbolStart = "768">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3267C44E-2AB0-411F-BDBF-23C7D43D3A41"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ScipyMobile/Views/SideMenuItemCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "setSelected(_:animated:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "87F0039E-800F-48DC-9311-8797A7D35DDC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ScipyMobile/Views/ExpandableTableView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

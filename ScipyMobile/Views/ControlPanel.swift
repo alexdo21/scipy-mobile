@@ -24,13 +24,13 @@ class ControlPanel: UIView {
         return editor
     }()
     
-    let wrtEditor: UITextField = UITextField.makeCustomControlPanelUITextField(placeholder: "with respect to")
+    let wrtEditor: UITextField = UITextField.makeCustomControlPanelUITextField(placeholder: "with respect to", textContentType: .username)
     
-    let atValueEditor: UITextField = UITextField.makeCustomControlPanelUITextField(placeholder: "at value")
+    let atValueEditor: UITextField = UITextField.makeCustomControlPanelUITextField(placeholder: "at value", textContentType: .creditCardNumber)
     
-    let fromEditor: UITextField = UITextField.makeCustomControlPanelUITextField(placeholder: "from")
+    let fromEditor: UITextField = UITextField.makeCustomControlPanelUITextField(placeholder: "from", textContentType: .creditCardNumber)
     
-    let toEditor: UITextField = UITextField.makeCustomControlPanelUITextField(placeholder: "to")
+    let toEditor: UITextField = UITextField.makeCustomControlPanelUITextField(placeholder: "to", textContentType: .creditCardNumber)
     
     let divider1 = HorizontalDividerView()
     let divider2 = VerticalDividerView()
