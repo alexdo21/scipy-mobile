@@ -30,9 +30,10 @@ class ContainerViewController: UIViewController {
         addChild(navigator)
         view.addSubview(navigator.view)
         navigator.didMove(toParent: self)
+        
         let barAppearance = UINavigationBarAppearance()
         barAppearance.backgroundColor = UIColor.rgb(red: 116, green: 157, blue: 157)
-        barAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        barAppearance.titleTextAttributes = [.font: UIFont.systemFont(ofSize: 16), .foregroundColor: UIColor.white]
         navigator.navigationBar.standardAppearance = barAppearance
         navigator.navigationBar.scrollEdgeAppearance = barAppearance
         

@@ -18,10 +18,11 @@ class ContentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+
         let barButtonItem = UIBarButtonItem(image: barButtonImage, style: .plain, target: self, action: #selector(handleMenuTapped))
         barButtonItem.tintColor = .white
         navigationItem.setLeftBarButton(barButtonItem, animated: false)
-        view.backgroundColor = .white
     }
     
     @objc private func handleMenuTapped() {

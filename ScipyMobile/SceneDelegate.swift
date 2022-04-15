@@ -20,6 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
+        window?.overrideUserInterfaceStyle = .light
         window?.rootViewController = ContainerViewComposer.makeContainer()
         window?.makeKeyAndVisible()
     }

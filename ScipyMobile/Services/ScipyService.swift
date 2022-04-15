@@ -10,7 +10,7 @@ import Foundation
 class ScipyService: NSObject {
     static let sharedInstance = ScipyService()
     
-    let BASE_URL = "http://192.168.0.110:8000/"
+    let BASE_URL = "http://192.168.0.109:8000/"
 
     func fetchSymbolicDerivative(for expression: String, _ wrt: String, completion: @escaping (String) -> ()) {
         let url = URL(string: BASE_URL + "calculus/monomial/symbolic-derivative")!
@@ -100,7 +100,29 @@ class ScipyService: NSObject {
         task.resume()
     }
     
-    func fetchMatrixInverse(for matrix: [[Int]], completion: @escaping ([[Float]]) -> ()) {
+    func fetchMatrixDeterminant(for matrix: [[Float]], completion: @escaping (Float?) -> ()) {
+        let url = URL(string: BASE_URL + "linalg/determinant")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        let json: [String:Any] = ["matrix": matrix]
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+        request.httpBody = jsonData
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if error != nil {
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+            }
+            guard let data = data, let response = try? JSONDecoder().decode(Determinant.self, from: data) else { return }
+            DispatchQueue.main.async {
+                completion(response.determinant)
+            }
+        }
+        task.resume()
+    }
+    
+    func fetchMatrixInverse(for matrix: [[Float]], completion: @escaping ([[Float]]?) -> ()) {
         let url = URL(string: BASE_URL + "linalg/inverse")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -111,8 +133,9 @@ class ScipyService: NSObject {
         
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             if error != nil {
-                print(error ?? "")
-                return
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
             }
             guard let data = data, let response = try? JSONDecoder().decode(Inverse.self, from: data) else { return }
             DispatchQueue.main.async {
@@ -121,27 +144,4 @@ class ScipyService: NSObject {
         }
         task.resume()
     }
-
-    func fetchMatrixDeterminant(for matrix: [[Int]], completion: @escaping (Float) -> ()) {
-        let url = URL(string: BASE_URL + "linalg/determinant")!
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        let json: [String:Any] = ["matrix": matrix]
-        let jsonData = try? JSONSerialization.data(withJSONObject: json)
-        request.httpBody = jsonData
-        
-        
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if error != nil {
-                print(error ?? "")
-                return
-            }
-            guard let data = data, let response = try? JSONDecoder().decode(Determinant.self, from: data) else { return }
-            DispatchQueue.main.async {
-                completion(response.determinant)
-            }
-        }
-        task.resume()
-    }
-
 }

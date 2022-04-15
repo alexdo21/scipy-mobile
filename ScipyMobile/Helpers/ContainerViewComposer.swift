@@ -12,7 +12,8 @@ class ContainerViewComposer {
         let landingPageVC = LandingPageViewController()
         let derivativeVC = DerivativeController()
         let integralVC = IntegralController()
-        let linearAlgebraVC = LinearAlgebraController()
+        let determinantVC = DeterminantController()
+        let inverseVC = InverseController()
         let sideMenuItems = [
             SideMenuItem(icon: UIImage(systemName: "function")?.withTintColor(.black, renderingMode: .alwaysOriginal),
                          name: "Calculus",
@@ -23,13 +24,9 @@ class ContainerViewComposer {
             SideMenuItem(icon: UIImage(systemName: "square.grid.3x3")?.withTintColor(.black, renderingMode: .alwaysOriginal),
                          name: "Linear Algebra",
                          functions: [
-                            Function(name: "Matrix Inverse", viewController: .embed(linearAlgebraVC)),
-                            Function(name: "Matrix Determinant", viewController: .embed(linearAlgebraVC))
-                         ]),
-//            SideMenuItem(icon: UIImage(systemName: "cart")?.withTintColor(.black, renderingMode: .alwaysOriginal),
-//                         name: "Examples",
-//                         functions: [
-//                         ])
+                            Function(name: "Determinant of Matrix", viewController: .embed(determinantVC)),
+                            Function(name: "Inverse of Matrix", viewController: .embed(inverseVC))
+                         ])
         ]
         let sideMenuItemViewController = SideMenuViewController(sideMenuItems: sideMenuItems)
         let container = ContainerViewController(sideMenuViewController: sideMenuItemViewController, rootViewController: landingPageVC)

@@ -14,8 +14,8 @@
             filePath = "ScipyMobile/Controllers/DerivativeController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "handleAtValue()"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "ScipyMobile/Controllers/DerivativeController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "handleDerive()"
             landmarkType = "7">
          </BreakpointContent>
@@ -39,65 +39,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "95B31B1A-E6F9-4ACF-B4CA-A120184712AF"
+            uuid = "49C056CB-7BAF-4258-8874-1E5872A83125"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ScipyMobile/Services/ScipyService.swift"
+            filePath = "ScipyMobile/Controllers/DeterminantController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "fetchSymbolicDerivative(for:_:completion:)"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "handleDetermine()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BD128D1D-3AB9-436A-AD06-0E62D2A27B8C"
+            uuid = "FEBF100C-4CB8-4B8E-ACA2-B3A7E4455A0B"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ScipyMobile/Services/ScipyService.swift"
+            filePath = "ScipyMobile/Controllers/DeterminantController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "fetchSymbolicDerivative(for:_:completion:)"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "handleDetermine()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BD128D1D-3AB9-436A-AD06-0E62D2A27B8C - 5af90ccdb138860d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ScipyMobile.ScipyService.fetchSymbolicDerivative(for: Swift.String, _: Swift.String, completion: (Swift.String) -&gt; ()) -&gt; ()"
-                  moduleName = "ScipyMobile"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/AlexDo/dev/swift-projects/scipy-mobile/ScipyMobile/Services/ScipyService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "720">
-               </Location>
-               <Location
-                  uuid = "BD128D1D-3AB9-436A-AD06-0E62D2A27B8C - 5af90ccdb138860d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ScipyMobile.ScipyService.fetchSymbolicDerivative(for: Swift.String, _: Swift.String, completion: (Swift.String) -&gt; ()) -&gt; ()"
-                  moduleName = "ScipyMobile"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/AlexDo/dev/swift-projects/scipy-mobile/ScipyMobile/Services/ScipyService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "768">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "80CD0407-3C8D-441F-B300-3BE30197BABD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScipyMobile/Controllers/LinearAlgebraController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "configureMatrixSize(row:col:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

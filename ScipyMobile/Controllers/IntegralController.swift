@@ -26,6 +26,9 @@ class IntegralController: CalculusController {
         controlPanelModal.controlPanel.fromEditor.delegate = self
         controlPanelModal.controlPanel.toEditor.addTarget(self, action: #selector(handleTo), for: .editingChanged)
         controlPanelModal.controlPanel.toEditor.delegate = self
+        
+        solutionModal.solutionContainer.solutionView.problem.fontSize = 30
+        solutionModal.solutionContainer.solutionView.solution.fontSize = 30
     }
     
     override func handlePicker() {

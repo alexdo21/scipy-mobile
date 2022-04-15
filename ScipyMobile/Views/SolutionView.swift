@@ -12,19 +12,20 @@ class SolutionView: UIView {
     let problem: MTMathUILabel = {
         let label = MTMathUILabel()
         label.textColor = UIColor.rgb(red: 173, green: 187, blue: 187)
-        label.font = MTFontManager().xitsFont(withSize: 30)
+        label.font = MTFontManager().xitsFont(withSize: 18)
         return label
     }()
     let arrow: UIImageView = {
         let iv = UIImageView()
-        iv.contentMode = .scaleAspectFill
-        iv.image = UIImage(systemName: "arrow.down")?.withTintColor(.black, renderingMode: .alwaysOriginal)
+        iv.contentMode = .left
+        let arrowImage = UIImage(systemName: "arrow.down")?.withTintColor(.black, renderingMode: .alwaysOriginal).withAlignmentRectInsets(.init(top: -5, left: -10, bottom: -10, right: -10))
+        iv.image = arrowImage
         return iv
     }()
     let solution: MTMathUILabel = {
         let label = MTMathUILabel()
         label.textColor = UIColor.rgb(red: 173, green: 187, blue: 187)
-        label.font = MTFontManager().xitsFont(withSize: 30)
+        label.font = MTFontManager().xitsFont(withSize: 18)
         return label
     }()
     
@@ -40,17 +41,15 @@ class SolutionView: UIView {
     func setupViews() {
         let container = UIStackView(arrangedSubviews: [problem, arrow, solution])
         container.axis = .vertical
-        container.distribution = .fillProportionally
+        container.distribution = .equalCentering
         
         addSubview(container)
         backgroundColor = .white
         
         container.anchor(top: topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor)
-        problem.widthAnchor.constraint(equalTo: container.widthAnchor, multiplier: 0.95).isActive = true
-        problem.heightAnchor.constraint(equalToConstant: 104.85).isActive = true
-        arrow.widthAnchor.constraint(equalTo: container.widthAnchor, multiplier: 0.1).isActive = true
-        arrow.heightAnchor.constraint(equalToConstant: 23.3).isActive = true
-        solution.widthAnchor.constraint(equalTo: container.widthAnchor, multiplier: 0.95).isActive = true
-        solution.heightAnchor.constraint(equalToConstant: 104.85).isActive = true
+        problem.anchor(top: container.topAnchor, left: container.leftAnchor, bottom: container.arrangedSubviews[1].topAnchor, right: container.rightAnchor, padding: .init(top: 0, left: 30, bottom: 0, right: 0))
+        arrow.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        arrow.centerXAnchor.constraint(equalTo: problem.centerXAnchor).isActive = true
+        solution.anchor(top: container.arrangedSubviews[1].bottomAnchor, left: container.leftAnchor, bottom: container.bottomAnchor, right: container.rightAnchor, padding: .init(top: 0, left: 30, bottom: 0, right: 0))
     }
 }

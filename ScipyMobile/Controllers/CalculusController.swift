@@ -18,7 +18,6 @@ class CalculusController: ContentViewController {
         ]))
         config.titlePadding = 5
         let button = UIButton(configuration: config, primaryAction: nil)
-        button.addTarget(self, action: #selector(handleEdit), for: .touchUpInside)
         return button
     }()
     let solveButton: UIButton = {
@@ -44,6 +43,7 @@ class CalculusController: ContentViewController {
         problemContainer.layer.cornerRadius = 10
         buttons.anchor(top: problemContainer.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, padding: .init(top: 10, left: 27, bottom: 0, right: 27), size: .init(width: 336, height: 50))
         buttons.layer.cornerRadius = 10
+        editButton.addTarget(self, action: #selector(handleEdit), for: .touchUpInside)
         editButton.widthAnchor.constraint(equalToConstant: 167).isActive = true
         solveButton.widthAnchor.constraint(equalToConstant: 167).isActive = true
         divider.widthAnchor.constraint(equalToConstant: 0.5).isActive = true

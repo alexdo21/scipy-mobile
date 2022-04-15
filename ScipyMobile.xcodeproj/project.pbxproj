@@ -38,6 +38,10 @@
 		D64D55B92803BD2400291F32 /* SolutionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55B82803BD2400291F32 /* SolutionContainer.swift */; };
 		D64D55BB2803BD3F00291F32 /* SolutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55BA2803BD3F00291F32 /* SolutionView.swift */; };
 		D64D55BD2803C9AB00291F32 /* IntegralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D55BC2803C9AB00291F32 /* IntegralController.swift */; };
+		D65CF4FF2807FDC300C83D45 /* BracketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF4FE2807FDC300C83D45 /* BracketView.swift */; };
+		D65CF501280805B800C83D45 /* MatrixEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF500280805B800C83D45 /* MatrixEntryView.swift */; };
+		D65CF5032808CBD700C83D45 /* DeterminantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF5022808CBD700C83D45 /* DeterminantController.swift */; };
+		D65CF5052808CC7200C83D45 /* InverseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF5042808CC7200C83D45 /* InverseController.swift */; };
 		E81916881752C0E5D2CC5955 /* Pods_ScipyMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4E57DE70F03D4DC35C5EDA /* Pods_ScipyMobile.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +81,10 @@
 		D64D55B82803BD2400291F32 /* SolutionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionContainer.swift; sourceTree = "<group>"; };
 		D64D55BA2803BD3F00291F32 /* SolutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionView.swift; sourceTree = "<group>"; };
 		D64D55BC2803C9AB00291F32 /* IntegralController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegralController.swift; sourceTree = "<group>"; };
+		D65CF4FE2807FDC300C83D45 /* BracketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BracketView.swift; sourceTree = "<group>"; };
+		D65CF500280805B800C83D45 /* MatrixEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixEntryView.swift; sourceTree = "<group>"; };
+		D65CF5022808CBD700C83D45 /* DeterminantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeterminantController.swift; sourceTree = "<group>"; };
+		D65CF5042808CC7200C83D45 /* InverseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InverseController.swift; sourceTree = "<group>"; };
 		E01F240515157C0AA3A72BF2 /* Pods-ScipyMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScipyMobile.debug.xcconfig"; path = "Target Support Files/Pods-ScipyMobile/Pods-ScipyMobile.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +158,8 @@
 				D64D55B02803BC4300291F32 /* ControlPanelModalViewController.swift */,
 				D64D55B22803BC6100291F32 /* SolutionModalViewController.swift */,
 				D64D55BC2803C9AB00291F32 /* IntegralController.swift */,
+				D65CF5022808CBD700C83D45 /* DeterminantController.swift */,
+				D65CF5042808CC7200C83D45 /* InverseController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -194,6 +204,8 @@
 				D64D55B62803BCE900291F32 /* ControlPanel.swift */,
 				D64D55B82803BD2400291F32 /* SolutionContainer.swift */,
 				D64D55BA2803BD3F00291F32 /* SolutionView.swift */,
+				D65CF4FE2807FDC300C83D45 /* BracketView.swift */,
+				D65CF500280805B800C83D45 /* MatrixEntryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -353,18 +365,22 @@
 				D63AD8F927E6CE53006B09AB /* LinearAlgebra.swift in Sources */,
 				D64D55AB2803BB1400291F32 /* SideMenuDelegate.swift in Sources */,
 				D64D55A027FE3EC700291F32 /* ExpandableTableView.swift in Sources */,
+				D65CF501280805B800C83D45 /* MatrixEntryView.swift in Sources */,
 				D63AD8DE27E6C8D9006B09AB /* AppDelegate.swift in Sources */,
 				D6447C7D27FC079F00BF357A /* SideMenuItemCell.swift in Sources */,
 				D63AD8E027E6C8D9006B09AB /* SceneDelegate.swift in Sources */,
 				D63AD8F727E6CE47006B09AB /* Calculus.swift in Sources */,
 				D64D55A627FFB82700291F32 /* CalculusController.swift in Sources */,
 				D6447C7B27FC023000BF357A /* SideMenuItem.swift in Sources */,
+				D65CF4FF2807FDC300C83D45 /* BracketView.swift in Sources */,
 				D6447C7F27FD057900BF357A /* LinearAlgebraController.swift in Sources */,
 				D6447C7627FBFD6500BF357A /* SideMenuViewController.swift in Sources */,
 				D64D55A227FE5F2E00291F32 /* LandingPageViewController.swift in Sources */,
+				D65CF5032808CBD700C83D45 /* DeterminantController.swift in Sources */,
 				D64D55B32803BC6100291F32 /* SolutionModalViewController.swift in Sources */,
 				D64D55AF2803BBEE00291F32 /* DividerView.swift in Sources */,
 				D6447B3D27E6D797006917BD /* Extensions.swift in Sources */,
+				D65CF5052808CC7200C83D45 /* InverseController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

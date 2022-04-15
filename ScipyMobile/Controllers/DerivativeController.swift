@@ -24,6 +24,9 @@ class DerivativeController: CalculusController {
         controlPanelModal.controlPanel.configureDerivativeControlPanel()
         controlPanelModal.controlPanel.atValueEditor.addTarget(self, action: #selector(handleAtValue), for: .editingChanged)
         controlPanelModal.controlPanel.atValueEditor.delegate = self
+        
+        solutionModal.solutionContainer.solutionView.problem.fontSize = 30
+        solutionModal.solutionContainer.solutionView.solution.fontSize = 30
     }
     
     override func handlePicker() {

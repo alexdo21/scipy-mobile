@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6909F4E8-E593-4C99-B394-7C6B5272C24F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ScipyMobile/Services/ScipyService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "fetchSymbolicDerivative(for:_:completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6909F4E8-E593-4C99-B394-7C6B5272C24F - 5af90ccdb138860d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ScipyMobile.ScipyService.fetchSymbolicDerivative(for: Swift.String, _: Swift.String, completion: (Swift.String) -&gt; ()) -&gt; ()"
-                  moduleName = "ScipyMobile"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/AlexDo/dev/swift-projects/scipy-mobile/ScipyMobile/Services/ScipyService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "720">
-               </Location>
-               <Location
-                  uuid = "6909F4E8-E593-4C99-B394-7C6B5272C24F - 5af90ccdb138860d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ScipyMobile.ScipyService.fetchSymbolicDerivative(for: Swift.String, _: Swift.String, completion: (Swift.String) -&gt; ()) -&gt; ()"
-                  moduleName = "ScipyMobile"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/AlexDo/dev/swift-projects/scipy-mobile/ScipyMobile/Services/ScipyService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "768">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "3267C44E-2AB0-411F-BDBF-23C7D43D3A41"
             shouldBeEnabled = "No"
             ignoreCount = "0"
