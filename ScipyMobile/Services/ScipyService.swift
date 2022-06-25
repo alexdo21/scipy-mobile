@@ -10,10 +10,10 @@ import Foundation
 class ScipyService: NSObject {
     static let sharedInstance = ScipyService()
     
-    let BASE_URL = "http://192.168.0.109:8000/"
+    let BASE_URL = "http://192.168.0.129:8000/"
 
     func fetchSymbolicDerivative(for expression: String, _ wrt: String, completion: @escaping (String) -> ()) {
-        let url = URL(string: BASE_URL + "calculus/monomial/symbolic-derivative")!
+        let url = URL(string: BASE_URL + "calculus/symbolic-derivative")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         let json: [String:Any] = ["expression": expression, "wrt": wrt]
@@ -35,7 +35,7 @@ class ScipyService: NSObject {
     }
     
     func fetchSolveDerivative(for expression: String, _ wrt: String, _ atValue: String, completion: @escaping (String) -> ()) {
-        let url = URL(string: BASE_URL + "calculus/monomial/solve-derivative")!
+        let url = URL(string: BASE_URL + "calculus/solve-derivative")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         let json: [String:Any] = ["expression": expression, "wrt": wrt, "atValue": atValue]
@@ -57,7 +57,7 @@ class ScipyService: NSObject {
     }
     
     func fetchSymbolicIntegral(for expression: String, _ wrt: String, completion: @escaping (String) -> ()) {
-        let url = URL(string: BASE_URL + "calculus/monomial/symbolic-integral")!
+        let url = URL(string: BASE_URL + "calculus/symbolic-integral")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         let json: [String:Any] = ["expression": expression, "wrt": wrt]
@@ -79,7 +79,7 @@ class ScipyService: NSObject {
     }
 
     func fetchSolveIntegral(for expression: String, _ wrt: String, _ from: String, _ to: String, completion: @escaping (String) -> ()) {
-        let url = URL(string: BASE_URL + "calculus/monomial/solve-integral")!
+        let url = URL(string: BASE_URL + "calculus/solve-integral")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         let json: [String:Any] = ["expression": expression, "wrt": wrt, "from": from, "to": to]

@@ -24,8 +24,8 @@ class ContainerViewComposer {
             SideMenuItem(icon: UIImage(systemName: "square.grid.3x3")?.withTintColor(.black, renderingMode: .alwaysOriginal),
                          name: "Linear Algebra",
                          functions: [
-                            Function(name: "Determinant of Matrix", viewController: .embed(determinantVC)),
-                            Function(name: "Inverse of Matrix", viewController: .embed(inverseVC))
+                            Function(name: "Determinant", viewController: .embed(determinantVC)),
+                            Function(name: "Inverse", viewController: .embed(inverseVC))
                          ])
         ]
         let sideMenuItemViewController = SideMenuViewController(sideMenuItems: sideMenuItems)
