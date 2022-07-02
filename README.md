@@ -2,8 +2,8 @@
 
 Mobile (SciPy Mobile) and web (SciPy Web) applications giving users direct access to SciPy's scientific computing functionalities.
 
-[Click here to watch a demo of SciPy Web](https://www.youtube.com/watch?v=SOUVwJVtz-s)  
-[Click here to watch a demo of SciPy Mobile](https://www.youtube.com/watch?v=DSa7pLDoxJo)
+[Click here to watch a demo of SciPy Mobile](https://www.youtube.com/watch?v=DSa7pLDoxJo)  
+[Click here to watch a demo of SciPy Web](https://www.youtube.com/watch?v=SOUVwJVtz-s)
 
 The tech stack of SciPy Suite is:
 - Swift and UIKit with third-person LaTeX renderer libraries [iosMath](https://github.com/kostub/iosMath) and [MathEditor](https://github.com/kostub/MathEditor) for the mobile front end.
@@ -37,14 +37,14 @@ Both front-end applications were designed using Figma.
 SciPy API is meant to be as functional as possible, meaning that whatever requests it receives it'll simply compute the problem and return it in a client-app readable format format. SciPy API holds no state. As a Flask app, SciPy API takes advantage of blueprints to organize its endpoints. Each blueprint corresponds to a specific category namely: Calculus and Linear Algebra, with endpoints for each desired computation. The endpoints by category are:
 
 - **Calculus**
-    - Symbolic Derivative 
-    - Solve Derivative
-    - Symbolic (indefinite) Integral
-    - Solve (definite) Integral
+  - Symbolic Derivative
+  - Solve Derivative
+  - Symbolic (indefinite) Integral
+  - Solve (definite) Integral
 
 - **Linear Algebra**
-    - Matrix Determinant
-    - Matrix Inverse
+  - Matrix Determinant
+  - Matrix Inverse
 
 Each endpoint in turn calls a service function that computes the given problem and returns in a client-app readable format. The request input and output are meant to be as simple and RESTful as possible. The input is always a request object containing the expression/problem and other fields required to compute the solution. The output is always a response object with one field containing the solution to the specified problem.
 
@@ -115,26 +115,26 @@ Because SciPy Web is built from functional components, it uses shared components
 Each page is listed below with the shared components it contains:
 
 - **Derivative Page**
-    - ExpressionLabel
-    - ControlPanel
-    - SolveButton
-    - Solution
+  - ExpressionLabel
+  - ControlPanel
+  - SolveButton
+  - Solution
 
 - **Integral Page**
-    - ExpressionLabel
-    - ControlPanel
-    - SolveButton
-    - Solution
+  - ExpressionLabel
+  - ControlPanel
+  - SolveButton
+  - Solution
 
 - **Determinant Page**
-    - MatrixEditor
-    - SolveButton
-    - Solution
+  - MatrixEditor
+  - SolveButton
+  - Solution
 
 - **Inverse Page**
-    - MatrixEditor
-    - SolveButton
-    - Solution
+  - MatrixEditor
+  - SolveButton
+  - Solution
 
 ### Latex
 
