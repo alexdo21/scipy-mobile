@@ -2,7 +2,7 @@
  
 Mobile (SciPy Mobile) and web (SciPy Web) applications giving users direct access to SciPy's scientific computing functionalities.
  
-[Click here to watch a demo of SciPy Mobile](https://www.youtube.com/watch?v=DSa7pLDoxJo) 
+[Click here to watch a demo of SciPy Mobile](https://www.youtube.com/watch?v=DSa7pLDoxJo)  
 [Click here to watch a demo of SciPy Web](https://www.youtube.com/watch?v=SOUVwJVtz-s)
  
 The tech stack of SciPy Suite is:
